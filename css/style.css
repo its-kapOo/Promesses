@@ -1,0 +1,155 @@
+
+/* ---------- GLOBAL ------------ */
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:0;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+/* Le code CSS de la démo */
+
+
+html 
+{
+    font-size: 62.5%      /* rééquilibrage du pixel en rem  1rem=10px */
+    
+}
+   
+
+body 
+{
+        font-family:Arial;
+        font-size: 1.6rem;
+
+
+}
+
+
+
+/* -------------- HEADER --------------- */
+header{
+    width: 100%;
+    height: 6%;
+}
+/* 
+.fas{
+    color: blue;
+    font-size: 2rem;
+} */
+img{
+    width:100%;
+}
+.top-left{
+    width: 10%;
+    display: block;
+}
+.top-right{
+    display: none;
+}
+.header-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10%;
+}
+.header-top a{
+    color: red;
+    font-size: 2.5rem;
+    margin: 0 1rem;
+}
+
+.container{
+    width: 100%;
+    height: 100px;
+    background-color: green;
+}
+
+nav>ul{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgoldenrodyellow;
+}
+
+.bottom li{
+    list-style: none;
+}
+
+.deroulant{
+    display: none;
+    font-size: 2rem;
+    width: 20%;
+}
+.deroulant:active{
+    display:block;
+}
+
+.deroulant:hover{
+    color: red;
+    border: 2px solid blue;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 3px #CCC;
+    background-color: white;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+/* -------------- BODY  --------------- */ 
+
+
+
+@media screen and (min-width: 768px) {
+    .top-left{
+        display: none;
+    }
+
+    img{
+        width:80%;
+        float: left;
+        height: 90%;
+    }
+
+    .top-right{
+        float:right;
+        display: block;
+    }
+}
+    
+@media screen and (min-width: 1024px){
+    .top-left{
+        display: none;
+    }
+
+    .top-right{
+        float:right;
+        display: block;
+    }
+
+    img{
+        width:80%;
+        float: left;
+        height: 100%;
+    }
+}
